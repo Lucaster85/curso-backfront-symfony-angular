@@ -18,4 +18,12 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.root_dir').'/..').DIRECTORY_SEPARATOR,
         ]);
     }
+        /**
+     * @Route("/pruebas", name="Pruebas")
+     */
+    public function pruebasAction() {
+       echo "Hola desde pruebas";
+
+       die();
+    }
 }
