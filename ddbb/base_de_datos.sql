@@ -18,8 +18,8 @@ CREATE TABLE tasks(
     title       VARCHAR(255),
     description text,
     status      VARCHAR(100),
-    created_at  datatime DEFAULT CURRENT_TIMESTAMP,
-    updated_at  datatime,
+    created_at  datetime DEFAULT CURRENT_TIMESTAMP,
+    updated_at  datetime,
     CONSTRAINT pk_tasks PRIMARY KEY(id),
     CONSTRAINT fk_tasks_users FOREIGN KEY(user_id) REFERENCES users(id)
 )ENGINE=InnoDb;
